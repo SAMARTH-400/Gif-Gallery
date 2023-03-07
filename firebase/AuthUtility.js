@@ -1,7 +1,6 @@
 import { getApp } from "firebase/app";
 import { signInWithPopup, getAuth, signOut, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 
-
 export async function signinWithGoogle() {
     const provider = new GoogleAuthProvider();
     signInWithPopup(getAuth(), provider).then((result) => {
@@ -10,7 +9,6 @@ export async function signinWithGoogle() {
 }
 export async function logout() {
     signOut(getAuth()).then(() => {
-        router.replace('/login');
     }).catch( error => console.log(error) );
 }
 export async function createUser(email, password) {

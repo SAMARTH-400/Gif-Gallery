@@ -267,3 +267,15 @@ line-height: 16px;
 
 color: #272727;
 }
+.spinnerdiv{
+  position: absolute;
+width: 56px;
+height: 56px;
+left: 540px;
+top: 213px;
+}
+.what{
+  border-top-color: rgb(174, 174, 174);
+	-webkit-animation: spinner 1.5s linear infinite;
+	animation: spinner 1.5s linear infinite;
+}
