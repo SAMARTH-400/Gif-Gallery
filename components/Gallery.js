@@ -43,7 +43,6 @@ export default function Gallery() {
                 }
             }).then(setIsLoading(true));
             setApidata(results.data.data);
-            console.log(apidata);
         }catch(error){console.log(error);}
         setIsLoading(false);
     }
