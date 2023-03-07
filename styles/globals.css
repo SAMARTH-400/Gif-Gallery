@@ -109,3 +109,161 @@ a {
     color-scheme: dark;
   }
 }
+
+.loader {
+	border-top-color: #3498db;
+	-webkit-animation: spinner 1.5s linear infinite;
+	animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.gifcontainer{
+  position: absolute;
+  width: 1136px;
+  height: 534px;
+  left: calc(50% - 1136px/2 + 0px);
+  top: 194px;
+  background: #FFFFFF;
+  border-radius: 0px 0px 20px 20px;
+
+  
+}
+.searchcontainer{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  gap: 20px;
+
+  position: absolute;
+  width: 1136px;
+  height: 122px;
+  left: calc(50% - 1136px/2 + 0px);
+  top: 72px;
+
+  background: #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+}
+.searchbox{
+  display: flex;
+  flex-direction: row;
+  align-items:center ;
+  padding: 24px;
+  gap: 10px;
+
+  width: 888px;
+  height: 57px;
+  background: #F2F4F8;
+  border-radius: 12px;  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+.searchbutton{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px;
+  gap: 10px;
+
+  width: 184px;
+  height: 62px;
+
+  /* Black */
+
+  background: #000000;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.pagination{
+  position: absolute;
+  width: 270px;
+  height: 45px;
+  left: 427px;
+  top: 438px;
+}
+.pageinationContainer{
+  display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 270px;
+height: 32px;
+left: 0px;
+top: 5px;
+
+}
+.pagecontrol{
+  width: 68px;
+  height: 16px;
+/* Numbers */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+  /* not black */
+  color: #272727;
+}
+.numcontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 14px;
+  gap: 8px;
+
+  width: 25px;
+  height: 32px;
+/* Inside auto layout */
+}
+.pagenum{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 9px;
+  height: 16px;
+
+/* Numbers */
+
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height, or 114% */
+
+
+/* not black */
+
+color: #272727;
+}
