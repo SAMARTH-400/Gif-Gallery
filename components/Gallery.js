@@ -62,16 +62,16 @@ export default function Gallery() {
     };
     return (
         <div className='h-screen w-full bg-gray-100'>
-            <div className='searchcontainer scale-110'>   
+            <div className={`searchcontainer scale-110 rounded-t-[20px] ${input==="" && 'rounded-b-[20px]' } `}>   
                 <div class="absolute inset-y-0 left-10 flex items-center pl-3 pointer-events-none">
                     <svg aria-hidden="true" class="w-6 h-6 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                 </div>
                 <div className='searchbox text-black outline-none'> 
                     <input className='h-[30px] w-full bg-transparent ml-10 outline-none' value={input} onChange={ e => { e.preventDefault; setInput(e.target.value) } }></input>
                 </div>
-                <button type="button" className='searchbutton text-lg font-medium hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300' onClick={getGifs} > Search </button>
+                <button type="button" className='searchbutton text-lg font-medium hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 ' onClick={getGifs} > Search </button>
             </div>
-            <div className='gifcontainer scale-110 flex'>
+            <div className= {`flex gifcontainer scale-110 ${input==="" && 'invisible' }`} >
                 <div className='flex justify-even'>
                     {renderGifs()}
                 </div>

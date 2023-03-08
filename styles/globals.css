@@ -158,7 +158,6 @@ a {
   top: 72px;
 
   background: #FFFFFF;
-  border-radius: 20px 20px 0px 0px;
 }
 .searchbox{
   display: flex;
@@ -275,7 +274,7 @@ left: 540px;
 top: 213px;
 }
 .what{
-  border-top-color: rgb(174, 174, 174);
+  border-top-color: rgb(160, 160, 160);
 	-webkit-animation: spinner 1.5s linear infinite;
 	animation: spinner 1.5s linear infinite;
 }
